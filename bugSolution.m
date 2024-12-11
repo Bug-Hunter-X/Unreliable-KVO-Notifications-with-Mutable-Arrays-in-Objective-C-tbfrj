@@ -1,0 +1,1 @@
+To reliably trigger KVO notifications, use methods that explicitly signal changes to the observed array, such as `-insertObject:atIndex:` and `-removeObjectAtIndex:`. This ensures the KVO mechanism is properly notified of modifications. Alternatively, consider using a wrapper class that manages the array and triggers KVO notifications explicitly when changes are made.
